@@ -1,0 +1,127 @@
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 89%;
+    margin: auto;
+  }
+  .section {
+    margin-bottom: 5rem;
+  }
+  .bg {
+    height: 100vh;
+  }
+  .center-con {
+    padding: 2rem;
+  }
+  .center-con h1 {
+    margin-bottom: 1.5rem;
+  }
+  .center-con h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+  .btn-desk {
+    width: 15rem;
+    height: 3rem;
+    display: grid;
+    place-items: center;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+  .desktop-hodden {
+    display: none;
+  }
+  .mobile-hidden {
+    display: block;
+  }
+  .desktop-menu ul {
+    display: flex;
+  }
+  .desktop-menu ul li {
+    margin: 0.2rem 1rem;
+  }
+  .desktop-menu ul li a {
+    font-size: 1.1rem;
+    color: #000;
+    transition: all 0.2s ease-in-out;
+  }
+  .desktop-menu ul li:hover a {
+    color: var(--primary-color);
+  }
+
+  .products-con {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+  }
+  .flex-desktop {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .img-center{
+    margin-bottom: 1.5rem;
+  }
+  .text-center{
+    text-align: center;
+  }
+  .width-75{
+    width: 75%;
+  }
+  .margin{
+    margin: 0 auto;
+  }
+  .blog-con{
+    grid-template-columns: repeat(3,1fr);
+  }
+  #contact-section{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 5rem;
+  }
+  #contact-section > * {
+    flex: 1;
+  }
+
+  .font{
+    font-size: 1.1rem;
+  }
+
+  .input-con{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .input-con input,
+  .contacts textarea{
+    font-size: 1.1rem;
+  }
+  .address ul li a ,
+  .address ul li p{
+    font-size: 1.1rem
+  }
+  .top-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .top-footer > *{
+    flex: 1;
+  }
+  .link ul{
+    margin-right: 10rem;
+  }
+  .link ul li a{
+    font-size: 1.1rem;
+  }
+  .bottom-footer{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  /* ============================= cart ==============================*/
+  #cart-items-con{
+    width: 70rem;
+  }
+  
+}

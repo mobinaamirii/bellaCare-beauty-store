@@ -1,0 +1,77 @@
+@import url("./main.css");
+/* .=================================================. */
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: var(--primary-color);
+}
+
+.form-login{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 30rem;
+    box-shadow: var(--shadow-1);
+}
+.form-login input{
+    margin-bottom: 1rem;
+    background-color: var(--primary-color-bg);
+    padding: 1rem;
+    width: 100%;
+    font-size: var(--h3-font-size);
+    border-radius: 0.5rem;
+}
+.form-login input:focus{
+    border: 2px solid #000;
+}
+.form-login h1{
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.form-login a{
+    margin-top: 0.75rem;
+    color: #000;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.form-login a:hover{
+    color: var(--primary-color);
+}
+.primary-btn {
+  background-color: var(--primary-color);
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.primary-btn:hover {
+  background-color: #ad604f;
+}
+.primary-btn:active {
+  background-color: #9b5545;
+  transform: scale(0.95);
+}
+.form-login .pass{
+    position: relative;
+}
+.form-login .pass input{
+   padding-right: 2.5rem;
+}
+.form-login .pass i{
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    cursor: pointer;
+    font-size: var(--h2-font-size);
+    transform: translateY(-90%);
+    color: var(--primary-color);
+}

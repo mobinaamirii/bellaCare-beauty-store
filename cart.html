@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="./style/cart.css" />
+    <link rel="stylesheet" href="./style/responsive.css" />
+  </head>
+  <body>
+    <section id="cart-container" class="cart-container">
+      <!-- <p class="font-rokh font-size-2">Your Cart</p>
+      <p class="font-exo2 font-size-1">User name : <span>Mobina</span></p>
+      <a href="./index.html">Back to Home</a> -->
+
+      <div id="cart-items-con">
+        <!-- <div class="cart-item">
+                <img src="./assets/images/product7.png" alt="product"/>
+                <p>Lipstick</p>
+                <p>700,00$</p>
+                <button>Delete</button>
+            </div>
+
+            <div class="cart-item">
+                <img src="./assets/images/product7.png" alt="product"/>
+                <p>Lipstick</p>
+                <p>700,00$</p>
+                <button>Delete</button>
+            </div>
+
+
+            <div class="cart-item">
+                <img src="./assets/images/product7.png" alt="product"/>
+                <p>Lipstick</p>
+                <p>700,00$</p>
+                <button>Delete</button>
+            </div>
+
+ -->
+      </div>
+
+      <!-- <p>Login to your account to continue shopping</p>
+      <a href="./login.html">Click to sign in to your user panel</a>
+
+      <p>Total : 4 items, valued at 450000</p> -->
+    </section>
+
+    <script src="./script/cart.js" type="module"></script>
+    <script>
+      const deleteItem = (id) => {
+        if (confirm("Are you sure you want to remove this item?")) {
+          const loggedIn = JSON.parse(localStorage.getItem("logged-in"));
+          const userExist = loggedIn?.username;
+
+          const userData = JSON.parse(localStorage.getItem(userExist) || "{}");
+          let cart = userData.cart || [];
+
+          cart = cart.filter((item) => item.id != id);
+          localStorage.setItem(
+            userExist,
+            JSON.stringify({ userExist: userExist, cart: cart })
+          );
+          alert("The item has been successfully removed.");
+          location.reload();
+        }
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+@import url("./main.css");
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: var(--primary-color-bg);
+  text-align: center;
+}
+/* .cart-container{
+  display :flex;
+  justify-content: center;
+  align-items:center ;
+} */
+#cart-items-con{
+    border: 2px solid black;
+    height: 10rem;
+    overflow-y: scroll;
+    margin: 1rem 0;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 30rem;
+}
+.cart-item{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+.cart-item img{
+  width: 5rem;
+  height: 8rem;
+  border-radius: 0.5rem;
+  
+}
+.cart-item button{
+  padding:0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  color: red;
+  border: 2px solid red;
+  transition: all 0.2s ease-in-out;
+}
+.cart-item button:hover{
+  background-color: red;
+  color: #fff;
+}
+.cart-item button:active{
+  transform: scale(0.95);
+}
+.cart-item p{
+  color: #000;
+}
+.cart-container > p:first-child,
+.cart-container > p:nth-child(2){
+  text-align: center;
+  color: #000;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.cart-container > p:nth-child(2) span{
+  color: var(--primary-color);
+  font-weight: 550;
+}
+.cart-container > p:nth-of-type(3){
+  color: #000;
+  margin-bottom: 0.25rem;
+}
+.cart-container > a:nth-of-type(1),
+.cart-container > a:nth-of-type(2){
+  text-align: center;
+  color: #000;
+  font-weight: 300;
+  transition: all 0.2s ease-in-out;
+}
+.cart-container > a:nth-of-type(1):hover,
+.cart-container > a:nth-of-type(2):hover{
+  color: var(--primary-color);
+  font-weight: 500;  
+}
+.cart-container > p:last-child{
+  text-align: center;
+  font-size: 1rem;
+  color: #000;
+  font-weight: 500;  
+}
+
